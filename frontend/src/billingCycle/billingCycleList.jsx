@@ -11,7 +11,7 @@ class BillingCycleList extends Component {
     }
 
     renderRows() {
-        const list = this.props.list || []
+        const list = this.props.list || []        
         return list.map(bc =>(
             <tr>
                 <td>{bc.name}</td> 
@@ -21,8 +21,7 @@ class BillingCycleList extends Component {
         ))
     }
 
-    render() {
-        console.log(this.props.list)
+    render() {        
         return (
             <div>
                 <table className='table'>
